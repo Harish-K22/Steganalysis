@@ -1,0 +1,18 @@
+opencv-python
+lorem-text
+stegano
+efficientnet
+tensorflow
+pandas 
+numpy
+notebook
+python-box
+pyYAML
+tqdm
+ensure
+joblib
+types-PyYAML
+scipy
+Flask
+Flask-Cors
+-e .
