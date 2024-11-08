@@ -15,4 +15,8 @@ types-PyYAML
 scipy
 Flask
 Flask-Cors
+joblib
+ensure
+python-box
+kaggle
 -e .

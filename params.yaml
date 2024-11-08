@@ -1,0 +1,15 @@
+model:
+  input_shape: [512, 512, 3]
+  model_type: "EfficientNetB3"
+  optimizer: "adam"
+  loss_function: "binary_crossentropy"
+  metrics: ["accuracy"]
+
+training:
+  epochs: 10  # Adjust as needed
+  batch_size: 32
+  auto_parallel_calls: True  # To enable parallel data processing
+  shuffle_data: True  # Enable shuffling for train/test split
+
+evaluation:
+  log_best_accuracy: True  # If true, logs the best accuracy values

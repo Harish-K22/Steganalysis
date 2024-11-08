@@ -1,0 +1,29 @@
+artifacts_root: artifacts
+
+# # FOR KAGGLE
+# data_ingestion:
+#   root_dir: artifacts/data_ingestion
+#   kaggle_competition: alaska2-image-steganalysis  # Kaggle competition name
+#   local_data_file: artifacts/data_ingestion/data.zip
+#   unzip_dir: artifacts/data_ingestion
+
+# FOR GITHUB
+data_ingestion:
+  root_dir: artifacts/data_ingestion
+  source_URL: https://github.com/Harish-K22/Steganalysis/raw/refs/heads/master/Sample%20Dataset%20steganalysis.zip # (right click view raw and copy link address)
+  local_data_file: artifacts/data_ingestion/data.zip
+  unzip_dir: artifacts/data_ingestion
+
+prepare_base_model:
+  root_dir: artifacts/prepare_base_model
+  base_model_path: artifacts/prepare_base_model/base_model.h5
+  updated_base_model_path: artifacts/prepare_base_model/base_model_updated.h5
+
+prepare_callbacks:
+  root_dir: artifacts/prepare_callbacks
+  tensorboard_root_log_dir: artifacts/prepare_callbacks/tensorboard_log_dir
+  checkpoint_model_filepath: artifacts/prepare_callbacks/checkpoint_dir/model.h5
+
+training:
+  root_dir: artifacts/training
+  trained_model_path: artifacts/training/model.h5

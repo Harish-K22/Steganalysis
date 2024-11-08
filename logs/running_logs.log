@@ -1,0 +1,45 @@
+[2024-11-08 12:57:05,881: INFO: main: Welcome to custom log]
+[2024-11-08 12:59:12,690: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-08 12:59:12,694: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-08 17:24:04,349: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-08 17:24:04,358: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-08 17:32:19,390: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-08 17:32:19,396: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-08 17:32:19,400: INFO: common: created directory at: artifacts]
+[2024-11-08 17:32:19,403: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-08 17:32:58,396: INFO: 2388877383: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 22756660
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "07b1147bb12d018cef6446014bc4d1b098f8a8db79c8f5e8866fed33abc1a055"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 7C62:1B13A2:A3502:C6553:672DFDCF
+Accept-Ranges: bytes
+Date: Fri, 08 Nov 2024 12:02:26 GMT
+Via: 1.1 varnish
+X-Served-By: cache-maa10228-MAA
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1731067345.401845,VS0,VE1548
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 16b196a200316f27618dd370567ccacf1e94b4c8
+Expires: Fri, 08 Nov 2024 12:07:26 GMT
+Source-Age: 1
+
+]
+[2024-11-08 17:38:37,628: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-08 17:38:37,628: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-08 17:38:37,628: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-08 17:38:37,641: INFO: common: created directory at: artifacts]
+[2024-11-08 17:38:37,641: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-08 17:38:37,643: INFO: data_ingestion: File already exists of size: 21.7 MB]
+[2024-11-08 17:38:37,938: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
