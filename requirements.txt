@@ -3,6 +3,7 @@ lorem-text
 stegano
 efficientnet
 tensorflow
+scikit-learn
 pandas 
 numpy
 notebook
@@ -18,5 +19,9 @@ Flask-Cors
 joblib
 ensure
 python-box
-kaggle
+kaggle-datasets
+lorem-text
+stegano
+efficientnet
+matplotlib
 -e .

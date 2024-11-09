@@ -4,12 +4,16 @@ model:
   optimizer: "adam"
   loss_function: "binary_crossentropy"
   metrics: ["accuracy"]
+  image_size: [512, 512, 3]
+  include_top: False         # Add this line
+  weights: "imagenet"        # Add this line
+  classes: 1                 # Add this line
 
 training:
-  epochs: 10  # Adjust as needed
+  epochs: 60
   batch_size: 32
-  auto_parallel_calls: True  # To enable parallel data processing
-  shuffle_data: True  # Enable shuffling for train/test split
+  auto_parallel_calls: True
+  shuffle_data: True
 
 evaluation:
-  log_best_accuracy: True  # If true, logs the best accuracy values
+  log_best_accuracy: True

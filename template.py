@@ -25,6 +25,7 @@ list_of_files = [
     'setup.py',
     'research/trials.ipynb',
     'research/1_data_ingestion.ipynb',
+    'research/2_prepare_base_model.ipynb',
     'main.py'
 
     'templates/index.html'
