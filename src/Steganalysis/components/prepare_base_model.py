@@ -31,7 +31,9 @@ class PrepareBaseModel:
             return tf.distribute.get_strategy()
 
     def get_base_model(self):
+        """Creates, compiles, and saves the base model based on configuration."""
         with self.strategy.scope():
+            # Model creation and compilation
             if self.config.model_type == "EfficientNetB3":
                 self.model = tf.keras.Sequential([
                     efn.EfficientNetB3(
@@ -42,14 +44,11 @@ class PrepareBaseModel:
                     layers.GlobalAveragePooling2D(),
                     layers.Dense(1, activation="sigmoid")
                 ])
-            else:
-                raise ValueError(f"Model type {self.config.model_type} is not supported.")
             
+            # Compile and save the model
             self.compile_model()
-            self.model.summary()
-            
-            # Save model here
-            self.save_model(self.config.base_model_path)  # Save the base model file
+            self.model.save(self.config.updated_base_model_path)  # Save as updated_base_model.keras
+            print(f"Model saved at {self.config.updated_base_model_path}")
 
     def compile_model(self):
         """Compiles the model with configurations from params.yaml."""

@@ -5,12 +5,12 @@ model:
   loss_function: "binary_crossentropy"
   metrics: ["accuracy"]
   image_size: [512, 512, 3]
-  include_top: False         # Add this line
-  weights: "imagenet"        # Add this line
-  classes: 1                 # Add this line
+  include_top: False    
+  weights: "imagenet"   
+  classes: 1                
 
 training:
-  epochs: 60
+  epochs: 1
   batch_size: 32
   auto_parallel_calls: True
   shuffle_data: True

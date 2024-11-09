@@ -63,3 +63,13 @@ class PrepareCallbacksConfig:
     tensorboard_root_log_dir: Path
     checkpoint_model_filepath: Path
 
+@dataclass(frozen=True)
+class ModelTrainingConfig:
+    root_dir: Path
+    model_path: Path
+    epochs: int
+    batch_size: int
+    callbacks_dir: Path
+    image_size: tuple
+    shuffle_data: bool
+    data_path: Path

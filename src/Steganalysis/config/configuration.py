@@ -1,6 +1,6 @@
 from Steganalysis.constants import *
 from Steganalysis.utils.common import read_yaml, create_directories
-from Steganalysis.entity.config_entity import DataIngestionConfig, PrepareBaseModelConfig, PrepareCallbacksConfig
+from Steganalysis.entity.config_entity import DataIngestionConfig, PrepareBaseModelConfig, PrepareCallbacksConfig, ModelTrainingConfig
 from pathlib import Path
 from box import ConfigBox
 
@@ -68,3 +68,17 @@ class ConfigurationManager:
             checkpoint_model_filepath=Path(self.config.prepare_callbacks.checkpoint_model_filepath)
         )
         return prepare_callbacks_config
+    
+    def get_model_training_config(self) -> ModelTrainingConfig:
+        training_config = self.params.training
+        model_training_config = ModelTrainingConfig(
+            model_path=Path(self.config.prepare_base_model.updated_base_model_path),
+            epochs=training_config.epochs,
+            batch_size=training_config.batch_size,
+            shuffle_data=training_config.shuffle_data,
+            image_size=tuple(self.params.model.input_shape),
+            root_dir=Path(self.config.training.root_dir),
+            callbacks_dir=Path(self.config.prepare_callbacks.root_dir),
+            data_path=Path(self.config.data_ingestion.root_dir)  # Add data_path from config
+        )
+        return model_training_config

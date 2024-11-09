@@ -492,3 +492,502 @@ x==========x]
 [2024-11-09 17:19:07,235: INFO: main: >>>>>> stage Prepare Callbacks completed <<<<<<
 
 x==========x]
+[2024-11-09 17:38:52,263: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-11-09 17:38:52,264: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-11-09 17:38:54,541: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-09 17:38:54,546: INFO: common: yaml file: E:\Projects\Steganalysis\config\config.yaml loaded successfully]
+[2024-11-09 17:38:54,549: INFO: common: yaml file: E:\Projects\Steganalysis\params.yaml loaded successfully]
+[2024-11-09 17:38:54,552: INFO: common: created directory at: artifacts]
+[2024-11-09 17:38:54,553: INFO: common: created directory at: artifacts\data_ingestion]
+[2024-11-09 17:38:54,555: INFO: data_ingestion: File already exists of size: 21.7 MB]
+[2024-11-09 17:38:54,824: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-11-09 17:38:54,825: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-11-09 17:38:54,827: INFO: common: yaml file: E:\Projects\Steganalysis\config\config.yaml loaded successfully]
+[2024-11-09 17:38:54,834: INFO: common: yaml file: E:\Projects\Steganalysis\params.yaml loaded successfully]
+[2024-11-09 17:38:54,834: INFO: common: created directory at: artifacts]
+[2024-11-09 17:38:54,834: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-11-09 17:39:00,011: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-11-09 17:39:00,014: INFO: main: >>>>>> stage Prepare Callbacks started <<<<<<]
+[2024-11-09 17:39:00,018: INFO: common: yaml file: E:\Projects\Steganalysis\config\config.yaml loaded successfully]
+[2024-11-09 17:39:00,030: INFO: common: yaml file: E:\Projects\Steganalysis\params.yaml loaded successfully]
+[2024-11-09 17:39:00,032: INFO: common: created directory at: artifacts]
+[2024-11-09 17:39:00,032: INFO: common: created directory at: artifacts/prepare_callbacks]
+[2024-11-09 17:39:00,034: INFO: main: >>>>>> stage Prepare Callbacks completed <<<<<<
+
+x==========x]
+[2024-11-09 17:39:00,035: INFO: main: >>>>>> stage Model Training started <<<<<<]
+[2024-11-09 17:39:00,045: INFO: common: yaml file: E:\Projects\Steganalysis\config\config.yaml loaded successfully]
+[2024-11-09 17:39:00,052: INFO: common: yaml file: E:\Projects\Steganalysis\params.yaml loaded successfully]
+[2024-11-09 17:39:00,053: INFO: common: created directory at: artifacts]
+[2024-11-09 17:39:00,053: INFO: common: created directory at: artifacts/training]
+[2024-11-09 17:39:00,056: ERROR: main: File not found: filepath=artifacts\prepare_base_model\base_model_updated.keras. Please ensure the file is an accessible `.keras` zip file.]
+Traceback (most recent call last):
+  File "E:\Projects\Steganalysis\main.py", line 49, in <module>
+    obj.main()
+  File "E:\Projects\Steganalysis\src\Steganalysis\pipeline\stage_04_model_training.py", line 19, in main
+    model = load_model(model_training_config.model_path)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\System_Files\Anaconda\Lib\site-packages\keras\src\saving\saving_api.py", line 200, in load_model
+    raise ValueError(
+ValueError: File not found: filepath=artifacts\prepare_base_model\base_model_updated.keras. Please ensure the file is an accessible `.keras` zip file.
+[2024-11-09 17:46:01,232: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-11-09 17:46:01,234: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-11-09 17:46:03,620: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-09 17:46:03,623: INFO: common: yaml file: E:\Projects\Steganalysis\config\config.yaml loaded successfully]
+[2024-11-09 17:46:03,628: INFO: common: yaml file: E:\Projects\Steganalysis\params.yaml loaded successfully]
+[2024-11-09 17:46:03,632: INFO: common: created directory at: artifacts]
+[2024-11-09 17:46:03,632: INFO: common: created directory at: artifacts\data_ingestion]
+[2024-11-09 17:46:03,634: INFO: data_ingestion: File already exists of size: 21.7 MB]
+[2024-11-09 17:46:03,913: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-11-09 17:46:03,913: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-11-09 17:46:03,918: INFO: common: yaml file: E:\Projects\Steganalysis\config\config.yaml loaded successfully]
+[2024-11-09 17:46:03,923: INFO: common: yaml file: E:\Projects\Steganalysis\params.yaml loaded successfully]
+[2024-11-09 17:46:03,925: INFO: common: created directory at: artifacts]
+[2024-11-09 17:46:03,925: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-11-09 17:46:09,609: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-11-09 17:46:09,611: INFO: main: >>>>>> stage Prepare Callbacks started <<<<<<]
+[2024-11-09 17:46:09,614: INFO: common: yaml file: E:\Projects\Steganalysis\config\config.yaml loaded successfully]
+[2024-11-09 17:46:09,619: INFO: common: yaml file: E:\Projects\Steganalysis\params.yaml loaded successfully]
+[2024-11-09 17:46:09,622: INFO: common: created directory at: artifacts]
+[2024-11-09 17:46:09,622: INFO: common: created directory at: artifacts/prepare_callbacks]
+[2024-11-09 17:46:09,624: INFO: main: >>>>>> stage Prepare Callbacks completed <<<<<<
+
+x==========x]
+[2024-11-09 17:46:09,624: INFO: main: >>>>>> stage Model Training started <<<<<<]
+[2024-11-09 17:46:09,628: INFO: common: yaml file: E:\Projects\Steganalysis\config\config.yaml loaded successfully]
+[2024-11-09 17:46:09,633: INFO: common: yaml file: E:\Projects\Steganalysis\params.yaml loaded successfully]
+[2024-11-09 17:46:09,633: INFO: common: created directory at: artifacts]
+[2024-11-09 17:46:09,633: INFO: common: created directory at: artifacts/training]
+[2024-11-09 17:46:14,570: ERROR: main: 'ModelTrainingConfig' object has no attribute 'image_size']
+Traceback (most recent call last):
+  File "E:\Projects\Steganalysis\main.py", line 49, in <module>
+    obj.main()
+  File "E:\Projects\Steganalysis\src\Steganalysis\pipeline\stage_04_model_training.py", line 29, in main
+    target_size=model_training_config.image_size[:2],
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ModelTrainingConfig' object has no attribute 'image_size'
+[2024-11-09 17:49:31,105: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-11-09 17:49:31,105: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-11-09 17:49:33,442: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-09 17:49:33,454: INFO: common: yaml file: E:\Projects\Steganalysis\config\config.yaml loaded successfully]
+[2024-11-09 17:49:33,462: INFO: common: yaml file: E:\Projects\Steganalysis\params.yaml loaded successfully]
+[2024-11-09 17:49:33,463: INFO: common: created directory at: artifacts]
+[2024-11-09 17:49:33,463: INFO: common: created directory at: artifacts\data_ingestion]
+[2024-11-09 17:49:33,463: INFO: data_ingestion: File already exists of size: 21.7 MB]
+[2024-11-09 17:49:33,744: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-11-09 17:49:33,744: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-11-09 17:49:33,751: INFO: common: yaml file: E:\Projects\Steganalysis\config\config.yaml loaded successfully]
+[2024-11-09 17:49:33,757: INFO: common: yaml file: E:\Projects\Steganalysis\params.yaml loaded successfully]
+[2024-11-09 17:49:33,757: INFO: common: created directory at: artifacts]
+[2024-11-09 17:49:33,757: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-11-09 17:49:39,279: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-11-09 17:49:39,285: INFO: main: >>>>>> stage Prepare Callbacks started <<<<<<]
+[2024-11-09 17:49:39,291: INFO: common: yaml file: E:\Projects\Steganalysis\config\config.yaml loaded successfully]
+[2024-11-09 17:49:39,300: INFO: common: yaml file: E:\Projects\Steganalysis\params.yaml loaded successfully]
+[2024-11-09 17:49:39,302: INFO: common: created directory at: artifacts]
+[2024-11-09 17:49:39,303: INFO: common: created directory at: artifacts/prepare_callbacks]
+[2024-11-09 17:49:39,303: INFO: main: >>>>>> stage Prepare Callbacks completed <<<<<<
+
+x==========x]
+[2024-11-09 17:49:39,303: INFO: main: >>>>>> stage Model Training started <<<<<<]
+[2024-11-09 17:49:39,311: INFO: common: yaml file: E:\Projects\Steganalysis\config\config.yaml loaded successfully]
+[2024-11-09 17:49:39,314: INFO: common: yaml file: E:\Projects\Steganalysis\params.yaml loaded successfully]
+[2024-11-09 17:49:39,319: INFO: common: created directory at: artifacts]
+[2024-11-09 17:49:39,319: ERROR: main: ModelTrainingConfig.__init__() got an unexpected keyword argument 'image_size']
+Traceback (most recent call last):
+  File "E:\Projects\Steganalysis\main.py", line 49, in <module>
+    obj.main()
+  File "E:\Projects\Steganalysis\src\Steganalysis\pipeline\stage_04_model_training.py", line 16, in main
+    model_training_config = config_manager.get_model_training_config()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Projects\Steganalysis\src\Steganalysis\config\configuration.py", line 74, in get_model_training_config
+    model_training_config = ModelTrainingConfig(
+                            ^^^^^^^^^^^^^^^^^^^^
+TypeError: ModelTrainingConfig.__init__() got an unexpected keyword argument 'image_size'
+[2024-11-09 17:51:29,925: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-11-09 17:51:29,925: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-11-09 17:51:32,124: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-09 17:51:32,128: INFO: common: yaml file: E:\Projects\Steganalysis\config\config.yaml loaded successfully]
+[2024-11-09 17:51:32,136: INFO: common: yaml file: E:\Projects\Steganalysis\params.yaml loaded successfully]
+[2024-11-09 17:51:32,140: INFO: common: created directory at: artifacts]
+[2024-11-09 17:51:32,140: INFO: common: created directory at: artifacts\data_ingestion]
+[2024-11-09 17:51:32,141: INFO: data_ingestion: File already exists of size: 21.7 MB]
+[2024-11-09 17:51:32,413: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-11-09 17:51:32,415: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-11-09 17:51:32,416: INFO: common: yaml file: E:\Projects\Steganalysis\config\config.yaml loaded successfully]
+[2024-11-09 17:51:32,425: INFO: common: yaml file: E:\Projects\Steganalysis\params.yaml loaded successfully]
+[2024-11-09 17:51:32,427: INFO: common: created directory at: artifacts]
+[2024-11-09 17:51:32,427: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-11-09 17:51:37,659: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-11-09 17:51:37,662: INFO: main: >>>>>> stage Prepare Callbacks started <<<<<<]
+[2024-11-09 17:51:37,665: INFO: common: yaml file: E:\Projects\Steganalysis\config\config.yaml loaded successfully]
+[2024-11-09 17:51:37,673: INFO: common: yaml file: E:\Projects\Steganalysis\params.yaml loaded successfully]
+[2024-11-09 17:51:37,675: INFO: common: created directory at: artifacts]
+[2024-11-09 17:51:37,675: INFO: common: created directory at: artifacts/prepare_callbacks]
+[2024-11-09 17:51:37,676: INFO: main: >>>>>> stage Prepare Callbacks completed <<<<<<
+
+x==========x]
+[2024-11-09 17:51:37,676: INFO: main: >>>>>> stage Model Training started <<<<<<]
+[2024-11-09 17:51:37,680: INFO: common: yaml file: E:\Projects\Steganalysis\config\config.yaml loaded successfully]
+[2024-11-09 17:51:37,690: INFO: common: yaml file: E:\Projects\Steganalysis\params.yaml loaded successfully]
+[2024-11-09 17:51:37,692: INFO: common: created directory at: artifacts]
+[2024-11-09 17:51:37,692: ERROR: main: ModelTrainingConfig.__init__() missing 5 required positional arguments: 'root_dir', 'model_path', 'epochs', 'batch_size', and 'callbacks_dir']
+Traceback (most recent call last):
+  File "E:\Projects\Steganalysis\main.py", line 49, in <module>
+    obj.main()
+  File "E:\Projects\Steganalysis\src\Steganalysis\pipeline\stage_04_model_training.py", line 16, in main
+    model_training_config = config_manager.get_model_training_config()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Projects\Steganalysis\src\Steganalysis\config\configuration.py", line 74, in get_model_training_config
+    model_training_config = ModelTrainingConfig(
+                            ^^^^^^^^^^^^^^^^^^^^
+TypeError: ModelTrainingConfig.__init__() missing 5 required positional arguments: 'root_dir', 'model_path', 'epochs', 'batch_size', and 'callbacks_dir'
+[2024-11-09 17:54:08,192: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-11-09 17:54:08,192: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-11-09 17:54:10,404: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-09 17:54:10,409: INFO: common: yaml file: E:\Projects\Steganalysis\config\config.yaml loaded successfully]
+[2024-11-09 17:54:10,414: INFO: common: yaml file: E:\Projects\Steganalysis\params.yaml loaded successfully]
+[2024-11-09 17:54:10,417: INFO: common: created directory at: artifacts]
+[2024-11-09 17:54:10,417: INFO: common: created directory at: artifacts\data_ingestion]
+[2024-11-09 17:54:10,419: INFO: data_ingestion: File already exists of size: 21.7 MB]
+[2024-11-09 17:54:10,696: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-11-09 17:54:10,696: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-11-09 17:54:10,700: INFO: common: yaml file: E:\Projects\Steganalysis\config\config.yaml loaded successfully]
+[2024-11-09 17:54:10,706: INFO: common: yaml file: E:\Projects\Steganalysis\params.yaml loaded successfully]
+[2024-11-09 17:54:10,711: INFO: common: created directory at: artifacts]
+[2024-11-09 17:54:10,711: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-11-09 17:54:15,794: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-11-09 17:54:15,795: INFO: main: >>>>>> stage Prepare Callbacks started <<<<<<]
+[2024-11-09 17:54:15,800: INFO: common: yaml file: E:\Projects\Steganalysis\config\config.yaml loaded successfully]
+[2024-11-09 17:54:15,808: INFO: common: yaml file: E:\Projects\Steganalysis\params.yaml loaded successfully]
+[2024-11-09 17:54:15,812: INFO: common: created directory at: artifacts]
+[2024-11-09 17:54:15,812: INFO: common: created directory at: artifacts/prepare_callbacks]
+[2024-11-09 17:54:15,814: INFO: main: >>>>>> stage Prepare Callbacks completed <<<<<<
+
+x==========x]
+[2024-11-09 17:54:15,816: INFO: main: >>>>>> stage Model Training started <<<<<<]
+[2024-11-09 17:54:15,819: INFO: common: yaml file: E:\Projects\Steganalysis\config\config.yaml loaded successfully]
+[2024-11-09 17:54:15,831: INFO: common: yaml file: E:\Projects\Steganalysis\params.yaml loaded successfully]
+[2024-11-09 17:54:15,833: INFO: common: created directory at: artifacts]
+[2024-11-09 17:54:15,833: ERROR: main: ModelTrainingConfig.__init__() got an unexpected keyword argument 'shuffle_data']
+Traceback (most recent call last):
+  File "E:\Projects\Steganalysis\main.py", line 49, in <module>
+    obj.main()
+  File "E:\Projects\Steganalysis\src\Steganalysis\pipeline\stage_04_model_training.py", line 16, in main
+    model_training_config = config_manager.get_model_training_config()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Projects\Steganalysis\src\Steganalysis\config\configuration.py", line 73, in get_model_training_config
+    model_training_config = ModelTrainingConfig(
+                            ^^^^^^^^^^^^^^^^^^^^
+TypeError: ModelTrainingConfig.__init__() got an unexpected keyword argument 'shuffle_data'
+[2024-11-09 17:56:23,087: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-11-09 17:56:23,088: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-11-09 17:56:25,454: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-09 17:56:25,466: INFO: common: yaml file: E:\Projects\Steganalysis\config\config.yaml loaded successfully]
+[2024-11-09 17:56:25,472: INFO: common: yaml file: E:\Projects\Steganalysis\params.yaml loaded successfully]
+[2024-11-09 17:56:25,475: INFO: common: created directory at: artifacts]
+[2024-11-09 17:56:25,476: INFO: common: created directory at: artifacts\data_ingestion]
+[2024-11-09 17:56:25,476: INFO: data_ingestion: File already exists of size: 21.7 MB]
+[2024-11-09 17:56:25,768: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-11-09 17:56:25,768: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-11-09 17:56:25,771: INFO: common: yaml file: E:\Projects\Steganalysis\config\config.yaml loaded successfully]
+[2024-11-09 17:56:25,780: INFO: common: yaml file: E:\Projects\Steganalysis\params.yaml loaded successfully]
+[2024-11-09 17:56:25,782: INFO: common: created directory at: artifacts]
+[2024-11-09 17:56:25,783: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-11-09 17:56:31,425: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-11-09 17:56:31,425: INFO: main: >>>>>> stage Prepare Callbacks started <<<<<<]
+[2024-11-09 17:56:31,429: INFO: common: yaml file: E:\Projects\Steganalysis\config\config.yaml loaded successfully]
+[2024-11-09 17:56:31,434: INFO: common: yaml file: E:\Projects\Steganalysis\params.yaml loaded successfully]
+[2024-11-09 17:56:31,436: INFO: common: created directory at: artifacts]
+[2024-11-09 17:56:31,436: INFO: common: created directory at: artifacts/prepare_callbacks]
+[2024-11-09 17:56:31,437: INFO: main: >>>>>> stage Prepare Callbacks completed <<<<<<
+
+x==========x]
+[2024-11-09 17:56:31,439: INFO: main: >>>>>> stage Model Training started <<<<<<]
+[2024-11-09 17:56:31,439: INFO: common: yaml file: E:\Projects\Steganalysis\config\config.yaml loaded successfully]
+[2024-11-09 17:56:31,448: INFO: common: yaml file: E:\Projects\Steganalysis\params.yaml loaded successfully]
+[2024-11-09 17:56:31,448: INFO: common: created directory at: artifacts]
+[2024-11-09 17:56:31,448: ERROR: main: ModelTrainingConfig.__init__() missing 2 required positional arguments: 'root_dir' and 'callbacks_dir']
+Traceback (most recent call last):
+  File "E:\Projects\Steganalysis\main.py", line 49, in <module>
+    obj.main()
+  File "E:\Projects\Steganalysis\src\Steganalysis\pipeline\stage_04_model_training.py", line 16, in main
+    model_training_config = config_manager.get_model_training_config()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Projects\Steganalysis\src\Steganalysis\config\configuration.py", line 73, in get_model_training_config
+    model_training_config = ModelTrainingConfig(
+                            ^^^^^^^^^^^^^^^^^^^^
+TypeError: ModelTrainingConfig.__init__() missing 2 required positional arguments: 'root_dir' and 'callbacks_dir'
+[2024-11-09 17:59:14,447: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-11-09 17:59:14,447: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-11-09 17:59:17,419: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-09 17:59:17,423: INFO: common: yaml file: E:\Projects\Steganalysis\config\config.yaml loaded successfully]
+[2024-11-09 17:59:17,430: INFO: common: yaml file: E:\Projects\Steganalysis\params.yaml loaded successfully]
+[2024-11-09 17:59:17,432: INFO: common: created directory at: artifacts]
+[2024-11-09 17:59:17,434: INFO: common: created directory at: artifacts\data_ingestion]
+[2024-11-09 17:59:17,435: INFO: data_ingestion: File already exists of size: 21.7 MB]
+[2024-11-09 17:59:17,772: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-11-09 17:59:17,772: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-11-09 17:59:17,778: INFO: common: yaml file: E:\Projects\Steganalysis\config\config.yaml loaded successfully]
+[2024-11-09 17:59:17,782: INFO: common: yaml file: E:\Projects\Steganalysis\params.yaml loaded successfully]
+[2024-11-09 17:59:17,787: INFO: common: created directory at: artifacts]
+[2024-11-09 17:59:17,788: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-11-09 17:59:24,421: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-11-09 17:59:24,421: INFO: main: >>>>>> stage Prepare Callbacks started <<<<<<]
+[2024-11-09 17:59:24,425: INFO: common: yaml file: E:\Projects\Steganalysis\config\config.yaml loaded successfully]
+[2024-11-09 17:59:24,432: INFO: common: yaml file: E:\Projects\Steganalysis\params.yaml loaded successfully]
+[2024-11-09 17:59:24,433: INFO: common: created directory at: artifacts]
+[2024-11-09 17:59:24,433: INFO: common: created directory at: artifacts/prepare_callbacks]
+[2024-11-09 17:59:24,433: INFO: main: >>>>>> stage Prepare Callbacks completed <<<<<<
+
+x==========x]
+[2024-11-09 17:59:24,433: INFO: main: >>>>>> stage Model Training started <<<<<<]
+[2024-11-09 17:59:24,442: INFO: common: yaml file: E:\Projects\Steganalysis\config\config.yaml loaded successfully]
+[2024-11-09 17:59:24,448: INFO: common: yaml file: E:\Projects\Steganalysis\params.yaml loaded successfully]
+[2024-11-09 17:59:24,448: INFO: common: created directory at: artifacts]
+[2024-11-09 17:59:30,022: ERROR: main: [WinError 3] The system cannot find the path specified: 'artifacts/data_ingestion/unzip_dir']
+Traceback (most recent call last):
+  File "E:\Projects\Steganalysis\main.py", line 49, in <module>
+    obj.main()
+  File "E:\Projects\Steganalysis\src\Steganalysis\pipeline\stage_04_model_training.py", line 23, in main
+    train_generator = data_gen.flow_from_directory(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\System_Files\Anaconda\Lib\site-packages\keras\src\legacy\preprocessing\image.py", line 1138, in flow_from_directory
+    return DirectoryIterator(
+           ^^^^^^^^^^^^^^^^^^
+  File "E:\System_Files\Anaconda\Lib\site-packages\keras\src\legacy\preprocessing\image.py", line 453, in __init__
+    for subdir in sorted(os.listdir(directory)):
+                         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'artifacts/data_ingestion/unzip_dir'
+[2024-11-09 18:02:55,296: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-11-09 18:02:55,296: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-11-09 18:02:57,607: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-09 18:02:57,615: INFO: common: yaml file: E:\Projects\Steganalysis\config\config.yaml loaded successfully]
+[2024-11-09 18:02:57,621: INFO: common: yaml file: E:\Projects\Steganalysis\params.yaml loaded successfully]
+[2024-11-09 18:02:57,624: INFO: common: created directory at: artifacts]
+[2024-11-09 18:02:57,625: INFO: common: created directory at: artifacts\data_ingestion]
+[2024-11-09 18:19:45,340: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-11-09 18:19:45,340: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-11-09 18:19:46,467: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-09 18:19:46,469: INFO: common: yaml file: E:\Projects\Steganalysis\config\config.yaml loaded successfully]
+[2024-11-09 18:19:46,470: INFO: common: yaml file: E:\Projects\Steganalysis\params.yaml loaded successfully]
+[2024-11-09 18:19:46,471: INFO: common: created directory at: artifacts]
+[2024-11-09 18:19:46,471: INFO: common: created directory at: artifacts\data_ingestion]
+[2024-11-09 18:19:46,471: INFO: data_ingestion: File already exists of size: 15.98 MB]
+[2024-11-09 18:19:46,473: ERROR: main: File is not a zip file]
+Traceback (most recent call last):
+  File "E:\Projects\Steganalysis\main.py", line 16, in <module>
+    obj.main()
+  File "E:\Projects\Steganalysis\src\Steganalysis\pipeline\stage_01_data_ingestion.py", line 17, in main
+    data_ingestion.extract_zip_file()
+  File "E:\Projects\Steganalysis\src\Steganalysis\components\data_ingestion.py", line 75, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\System_Files\Anaconda\Lib\zipfile\__init__.py", line 1349, in __init__
+    self._RealGetContents()
+  File "E:\System_Files\Anaconda\Lib\zipfile\__init__.py", line 1416, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2024-11-09 18:23:18,505: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-11-09 18:23:18,505: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-11-09 18:23:19,540: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-09 18:23:19,540: INFO: common: yaml file: E:\Projects\Steganalysis\config\config.yaml loaded successfully]
+[2024-11-09 18:23:19,544: INFO: common: yaml file: E:\Projects\Steganalysis\params.yaml loaded successfully]
+[2024-11-09 18:23:19,544: INFO: common: created directory at: artifacts]
+[2024-11-09 18:23:19,544: INFO: common: created directory at: artifacts\data_ingestion]
+[2024-11-09 18:24:03,863: INFO: data_ingestion: artifacts\data_ingestion\data.zip download! with following info: 
+Connection: close
+Content-Length: 22756660
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "07b1147bb12d018cef6446014bc4d1b098f8a8db79c8f5e8866fed33abc1a055"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: E956:CF831:346E6A:41BFAE:672F567E
+Accept-Ranges: bytes
+Date: Sat, 09 Nov 2024 12:53:23 GMT
+Via: 1.1 varnish
+X-Served-By: cache-bom4735-BOM
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1731156803.012579,VS0,VE383
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 3a6b11439d70a98b309e71ecec2da8fc815f1a7e
+Expires: Sat, 09 Nov 2024 12:58:23 GMT
+Source-Age: 0
+
+]
+[2024-11-09 18:24:04,031: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-11-09 18:24:04,031: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-11-09 18:24:04,034: INFO: common: yaml file: E:\Projects\Steganalysis\config\config.yaml loaded successfully]
+[2024-11-09 18:24:04,036: INFO: common: yaml file: E:\Projects\Steganalysis\params.yaml loaded successfully]
+[2024-11-09 18:24:04,037: INFO: common: created directory at: artifacts]
+[2024-11-09 18:24:04,037: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-11-09 18:24:06,739: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-11-09 18:24:06,741: INFO: main: >>>>>> stage Prepare Callbacks started <<<<<<]
+[2024-11-09 18:24:06,743: INFO: common: yaml file: E:\Projects\Steganalysis\config\config.yaml loaded successfully]
+[2024-11-09 18:24:06,746: INFO: common: yaml file: E:\Projects\Steganalysis\params.yaml loaded successfully]
+[2024-11-09 18:24:06,746: INFO: common: created directory at: artifacts]
+[2024-11-09 18:24:06,747: INFO: common: created directory at: artifacts/prepare_callbacks]
+[2024-11-09 18:24:06,747: INFO: main: >>>>>> stage Prepare Callbacks completed <<<<<<
+
+x==========x]
+[2024-11-09 18:24:06,747: INFO: main: >>>>>> stage Model Training started <<<<<<]
+[2024-11-09 18:24:06,749: INFO: common: yaml file: E:\Projects\Steganalysis\config\config.yaml loaded successfully]
+[2024-11-09 18:24:06,753: INFO: common: yaml file: E:\Projects\Steganalysis\params.yaml loaded successfully]
+[2024-11-09 18:24:06,754: INFO: common: created directory at: artifacts]
+[2024-11-09 18:24:06,754: ERROR: main: ModelTrainingConfig.__init__() got an unexpected keyword argument 'data_path']
+Traceback (most recent call last):
+  File "E:\Projects\Steganalysis\main.py", line 49, in <module>
+    obj.main()
+  File "E:\Projects\Steganalysis\src\Steganalysis\pipeline\stage_04_model_training.py", line 16, in main
+    model_training_config = config_manager.get_model_training_config()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Projects\Steganalysis\src\Steganalysis\config\configuration.py", line 74, in get_model_training_config
+    model_training_config = ModelTrainingConfig(
+                            ^^^^^^^^^^^^^^^^^^^^
+TypeError: ModelTrainingConfig.__init__() got an unexpected keyword argument 'data_path'
+[2024-11-09 18:25:57,456: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-11-09 18:25:57,456: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-11-09 18:25:58,543: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-09 18:25:58,545: INFO: common: yaml file: E:\Projects\Steganalysis\config\config.yaml loaded successfully]
+[2024-11-09 18:25:58,547: INFO: common: yaml file: E:\Projects\Steganalysis\params.yaml loaded successfully]
+[2024-11-09 18:25:58,548: INFO: common: created directory at: artifacts]
+[2024-11-09 18:25:58,548: INFO: common: created directory at: artifacts\data_ingestion]
+[2024-11-09 18:25:58,549: INFO: data_ingestion: File already exists of size: 21.7 MB]
+[2024-11-09 18:25:58,689: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-11-09 18:25:58,689: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-11-09 18:25:58,691: INFO: common: yaml file: E:\Projects\Steganalysis\config\config.yaml loaded successfully]
+[2024-11-09 18:25:58,693: INFO: common: yaml file: E:\Projects\Steganalysis\params.yaml loaded successfully]
+[2024-11-09 18:25:58,694: INFO: common: created directory at: artifacts]
+[2024-11-09 18:25:58,694: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-11-09 18:26:01,555: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-11-09 18:26:01,555: INFO: main: >>>>>> stage Prepare Callbacks started <<<<<<]
+[2024-11-09 18:26:01,557: INFO: common: yaml file: E:\Projects\Steganalysis\config\config.yaml loaded successfully]
+[2024-11-09 18:26:01,560: INFO: common: yaml file: E:\Projects\Steganalysis\params.yaml loaded successfully]
+[2024-11-09 18:26:01,560: INFO: common: created directory at: artifacts]
+[2024-11-09 18:26:01,561: INFO: common: created directory at: artifacts/prepare_callbacks]
+[2024-11-09 18:26:01,561: INFO: main: >>>>>> stage Prepare Callbacks completed <<<<<<
+
+x==========x]
+[2024-11-09 18:26:01,561: INFO: main: >>>>>> stage Model Training started <<<<<<]
+[2024-11-09 18:26:01,565: INFO: common: yaml file: E:\Projects\Steganalysis\config\config.yaml loaded successfully]
+[2024-11-09 18:26:01,567: INFO: common: yaml file: E:\Projects\Steganalysis\params.yaml loaded successfully]
+[2024-11-09 18:26:01,568: INFO: common: created directory at: artifacts]
+[2024-11-09 18:26:03,873: ERROR: main: [WinError 3] The system cannot find the path specified: 'artifacts/data_ingestion/unzip_dir']
+Traceback (most recent call last):
+  File "E:\Projects\Steganalysis\main.py", line 49, in <module>
+    obj.main()
+  File "E:\Projects\Steganalysis\src\Steganalysis\pipeline\stage_04_model_training.py", line 31, in main
+    val_generator = data_gen.flow_from_directory(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\System_Files\Anaconda\Lib\site-packages\keras\src\legacy\preprocessing\image.py", line 1138, in flow_from_directory
+    return DirectoryIterator(
+           ^^^^^^^^^^^^^^^^^^
+  File "E:\System_Files\Anaconda\Lib\site-packages\keras\src\legacy\preprocessing\image.py", line 453, in __init__
+    for subdir in sorted(os.listdir(directory)):
+                         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'artifacts/data_ingestion/unzip_dir'
+[2024-11-09 18:30:18,360: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-11-09 18:30:18,360: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-11-09 18:30:19,405: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-09 18:30:19,408: INFO: common: yaml file: E:\Projects\Steganalysis\config\config.yaml loaded successfully]
+[2024-11-09 18:30:19,410: INFO: common: yaml file: E:\Projects\Steganalysis\params.yaml loaded successfully]
+[2024-11-09 18:30:19,410: INFO: common: created directory at: artifacts]
+[2024-11-09 18:30:19,412: INFO: common: created directory at: artifacts\data_ingestion]
+[2024-11-09 18:30:19,412: INFO: data_ingestion: File already exists of size: 21.7 MB]
+[2024-11-09 18:30:19,532: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-11-09 18:30:19,533: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-11-09 18:30:19,534: INFO: common: yaml file: E:\Projects\Steganalysis\config\config.yaml loaded successfully]
+[2024-11-09 18:30:19,538: INFO: common: yaml file: E:\Projects\Steganalysis\params.yaml loaded successfully]
+[2024-11-09 18:30:19,538: INFO: common: created directory at: artifacts]
+[2024-11-09 18:30:19,539: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-11-09 18:30:22,107: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-11-09 18:30:22,107: INFO: main: >>>>>> stage Prepare Callbacks started <<<<<<]
+[2024-11-09 18:30:22,107: INFO: common: yaml file: E:\Projects\Steganalysis\config\config.yaml loaded successfully]
+[2024-11-09 18:30:22,111: INFO: common: yaml file: E:\Projects\Steganalysis\params.yaml loaded successfully]
+[2024-11-09 18:30:22,111: INFO: common: created directory at: artifacts]
+[2024-11-09 18:30:22,113: INFO: common: created directory at: artifacts/prepare_callbacks]
+[2024-11-09 18:30:22,113: INFO: main: >>>>>> stage Prepare Callbacks completed <<<<<<
+
+x==========x]
+[2024-11-09 18:30:22,114: INFO: main: >>>>>> stage Model Training started <<<<<<]
+[2024-11-09 18:30:22,116: INFO: common: yaml file: E:\Projects\Steganalysis\config\config.yaml loaded successfully]
+[2024-11-09 18:30:22,119: INFO: common: yaml file: E:\Projects\Steganalysis\params.yaml loaded successfully]
+[2024-11-09 18:30:22,120: INFO: common: created directory at: artifacts]
+[2024-11-09 18:44:03,869: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-11-09 18:44:03,871: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-11-09 18:44:07,966: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-09 18:44:07,981: INFO: common: yaml file: E:\Projects\Steganalysis\config\config.yaml loaded successfully]
+[2024-11-09 18:44:07,981: INFO: common: yaml file: E:\Projects\Steganalysis\params.yaml loaded successfully]
+[2024-11-09 18:44:07,993: INFO: common: created directory at: artifacts]
+[2024-11-09 18:44:07,993: INFO: common: created directory at: artifacts\data_ingestion]
+[2024-11-09 18:44:07,995: INFO: data_ingestion: File already exists of size: 21.7 MB]
+[2024-11-09 18:44:08,463: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-11-09 18:44:08,463: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-11-09 18:44:08,463: INFO: common: yaml file: E:\Projects\Steganalysis\config\config.yaml loaded successfully]
+[2024-11-09 18:44:08,483: INFO: common: yaml file: E:\Projects\Steganalysis\params.yaml loaded successfully]
+[2024-11-09 18:44:08,484: INFO: common: created directory at: artifacts]
+[2024-11-09 18:44:08,486: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-11-09 18:44:14,778: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-11-09 18:44:14,778: INFO: main: >>>>>> stage Prepare Callbacks started <<<<<<]
+[2024-11-09 18:44:14,778: INFO: common: yaml file: E:\Projects\Steganalysis\config\config.yaml loaded successfully]
+[2024-11-09 18:44:14,798: INFO: common: yaml file: E:\Projects\Steganalysis\params.yaml loaded successfully]
+[2024-11-09 18:44:14,801: INFO: common: created directory at: artifacts]
+[2024-11-09 18:44:14,801: INFO: common: created directory at: artifacts/prepare_callbacks]
+[2024-11-09 18:44:14,802: INFO: main: >>>>>> stage Prepare Callbacks completed <<<<<<
+
+x==========x]
+[2024-11-09 18:44:14,802: INFO: main: >>>>>> stage Model Training started <<<<<<]
+[2024-11-09 18:44:14,804: INFO: common: yaml file: E:\Projects\Steganalysis\config\config.yaml loaded successfully]
+[2024-11-09 18:44:14,811: INFO: common: yaml file: E:\Projects\Steganalysis\params.yaml loaded successfully]
+[2024-11-09 18:44:14,811: INFO: common: created directory at: artifacts]
