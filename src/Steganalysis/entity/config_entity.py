@@ -4,15 +4,12 @@ from pathlib import Path
 from typing import Tuple, List
 
 
-
 @dataclass(frozen=True)
 class DataIngestionConfig:
     root_dir: Path
     source_URL: str
     local_data_file: Path
     unzip_dir: Path
-
-
 
 @dataclass(frozen=True)
 class PrepareBaseModelConfig:
@@ -29,9 +26,6 @@ class PrepareBaseModelConfig:
     metrics: List[str]       
     batch_size: int          
     shuffle_data: bool       
-
-
-
 
 @dataclass(frozen=True)
 class PrepareCallbacksConfig:
@@ -61,3 +55,11 @@ class EvaluationConfig:
     all_params: dict
     params_image_size: list
     params_batch_size: int
+
+
+@dataclass(frozen=True)
+class PrepareCallbacksConfig:
+    root_dir: Path
+    tensorboard_root_log_dir: Path
+    checkpoint_model_filepath: Path
+

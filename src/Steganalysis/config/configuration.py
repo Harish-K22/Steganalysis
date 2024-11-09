@@ -1,6 +1,6 @@
 from Steganalysis.constants import *
 from Steganalysis.utils.common import read_yaml, create_directories
-from Steganalysis.entity.config_entity import DataIngestionConfig, PrepareBaseModelConfig
+from Steganalysis.entity.config_entity import DataIngestionConfig, PrepareBaseModelConfig, PrepareCallbacksConfig
 from pathlib import Path
 from box import ConfigBox
 
@@ -58,3 +58,13 @@ class ConfigurationManager:
         )
 
         return prepare_base_model_config
+
+    def get_prepare_callbacks_config(self) -> PrepareCallbacksConfig:
+        create_directories([self.config.prepare_callbacks.root_dir])
+        
+        prepare_callbacks_config = PrepareCallbacksConfig(
+            root_dir=Path(self.config.prepare_callbacks.root_dir),
+            tensorboard_root_log_dir=Path(self.config.prepare_callbacks.tensorboard_root_log_dir),
+            checkpoint_model_filepath=Path(self.config.prepare_callbacks.checkpoint_model_filepath)
+        )
+        return prepare_callbacks_config

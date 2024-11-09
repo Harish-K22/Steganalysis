@@ -459,3 +459,36 @@ x==========x]
 [2024-11-09 16:24:39,895: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
 
 x==========x]
+[2024-11-09 16:56:44,307: INFO: common: yaml file: E:\Projects\Steganalysis\config\config.yaml loaded successfully]
+[2024-11-09 16:56:44,310: INFO: common: yaml file: E:\Projects\Steganalysis\params.yaml loaded successfully]
+[2024-11-09 16:56:44,313: INFO: common: created directory at: artifacts]
+[2024-11-09 17:00:08,252: INFO: common: yaml file: E:\Projects\Steganalysis\config\config.yaml loaded successfully]
+[2024-11-09 17:00:08,256: INFO: common: yaml file: E:\Projects\Steganalysis\params.yaml loaded successfully]
+[2024-11-09 17:00:08,257: INFO: common: created directory at: artifacts]
+[2024-11-09 17:18:57,657: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-11-09 17:18:57,657: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-11-09 17:19:00,260: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-09 17:19:00,265: INFO: common: yaml file: E:\Projects\Steganalysis\config\config.yaml loaded successfully]
+[2024-11-09 17:19:00,271: INFO: common: yaml file: E:\Projects\Steganalysis\params.yaml loaded successfully]
+[2024-11-09 17:19:00,273: INFO: common: created directory at: artifacts]
+[2024-11-09 17:19:00,273: INFO: common: created directory at: artifacts\data_ingestion]
+[2024-11-09 17:19:00,273: INFO: data_ingestion: File already exists of size: 21.7 MB]
+[2024-11-09 17:19:00,598: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-11-09 17:19:00,598: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-11-09 17:19:00,602: INFO: common: yaml file: E:\Projects\Steganalysis\config\config.yaml loaded successfully]
+[2024-11-09 17:19:00,608: INFO: common: yaml file: E:\Projects\Steganalysis\params.yaml loaded successfully]
+[2024-11-09 17:19:00,612: INFO: common: created directory at: artifacts]
+[2024-11-09 17:19:00,613: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-11-09 17:19:07,219: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-11-09 17:19:07,219: INFO: main: >>>>>> stage Prepare Callbacks started <<<<<<]
+[2024-11-09 17:19:07,222: INFO: common: yaml file: E:\Projects\Steganalysis\config\config.yaml loaded successfully]
+[2024-11-09 17:19:07,228: INFO: common: yaml file: E:\Projects\Steganalysis\params.yaml loaded successfully]
+[2024-11-09 17:19:07,233: INFO: common: created directory at: artifacts]
+[2024-11-09 17:19:07,233: INFO: common: created directory at: artifacts/prepare_callbacks]
+[2024-11-09 17:19:07,235: INFO: main: >>>>>> stage Prepare Callbacks completed <<<<<<
+
+x==========x]
