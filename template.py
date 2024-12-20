@@ -9,15 +9,29 @@ project_name = 'Steganalysis'
 list_of_files = [
     '.github/workflows/.gitkeep',
     f'src/{project_name}/__init__.py',
+
     f'src/{project_name}/components/__init__.py',
+    f'src/{project_name}/components/data_ingestion.py',
+    f'src/{project_name}/components/prepare_base_model.py',
+    f'src/{project_name}/components/prepare_callbacks.py',
+
     f'src/{project_name}/utils/__init__.py',
     f'src/{project_name}/utils/common.py',
+
     f'src/{project_name}/config/__init__.py',
     f'src/{project_name}/config/configuration.py',
+
     f'src/{project_name}/pipeline/__init__.py',
+    f'src/{project_name}/pipeline/stage_01_data_ingestion.py',
+    f'src/{project_name}/pipeline/stage_02_prepare_base_model.py',
+    f'src/{project_name}/pipeline/stage_03_prepare_callbacks.py',
+    f'src/{project_name}/pipeline/stage_04_model_training.py',
+
     f'src/{project_name}/entity/__init__.py',
     f'src/{project_name}/entity/config_entity.py',
+
     f'src/{project_name}/constants/__init__.py',
+
     'config/config.yaml',
     'dvc.yaml',
     'params.yaml',
@@ -26,6 +40,9 @@ list_of_files = [
     'research/trials.ipynb',
     'research/1_data_ingestion.ipynb',
     'research/2_prepare_base_model.ipynb',
+    'research/3_prepare_callbacks.ipynb',
+    'research/4_model_training.ipynb',
+    'research/5_model_evaluation.ipynb',
     'main.py'
 
     'templates/index.html'

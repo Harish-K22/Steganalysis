@@ -41,7 +41,6 @@ except Exception as e:
     raise e
 
 
-
 STAGE_NAME = "Model Training"
 try:
     logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
